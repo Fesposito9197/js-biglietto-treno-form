@@ -4,46 +4,54 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- /google font -->
         <link rel="stylesheet" href="css/style.css">
         <title>Biglietto Treno Form</title>
     </head>
     <body>
-        <header>
+        <header class="white-text t-align-center">
             <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
         </header>
-        <main>
-            <div class="">
-                <form>
-                    <label for="nome-passeggero">Nome Cognome</label><br>
-                    <input type="text" id="nome" placeholder="inserisci nome e cognome">
-                </form>
+        <main class="container">
+            <div class="row j-conter-center flex-wrap bg-white m-top">
+                <div class="col">
+                    <form>
+                        <label for="nome-passeggero" class="t-align-center d-inline-block w-175 mb-20 red-text">Nome Cognome</label><br>
+                        <input type="text" id="nome" placeholder="inserisci nome e cognome" class="b-input">
+                    </form>
+    
+                </div>
+                <div class="col">
+                    <form>
+                        <label for="km-passeggero" class="t-align-center d-inline-block w-175 mb-20 red-text">Km da percorrere</label><br>
+                        <input class="b-input" type="number" id="km-passeggero" min="1" placeholder="inserisci i km">
+                    </form>
+    
+                </div>
+                <div class="col">
+                    <label for="age" class="d-block w-110 t-align-center mb-20 red-text">Fascia d'et&agrave;</label>
+                    <select id="age" name="agelist" form="ageform" class="b-input">
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne ">Maggiorenne</option>
+                        <option value="over65">Over65</option>
+                    </select>
+    
+                </div>
+                <div class="col">
+                    <button id="genera" class="btn">Genera</button>
+                    <button id="annulla" class="btn">Annulla</button>
+                </div>
 
             </div>
-            <div>
-                <form>
-                    <label for="km-passeggero">Inserisci i km da percorrere</label><br>
-                    <input type="number" id="km-passeggero" min="1" placeholder="inserisci i km che vuoi percorrere">
-                </form>
-
-            </div>
-            <div>
-                <label for="age">Fascia d'et&agrave;</label>
-                <select id="age" name="agelist" form="ageform">
-                    <option value="minorenne">Minorenne</option>
-                    <option value="maggiorenne ">Maggiorenne</option>
-                    <option value="over65">Over65</option>
-                </select>
-
-            </div>
-            <div>
-                <button id="genera">Genera</button>
-                <button id="annulla">Annulla</button>
-            </div>
-            <section class="ticket">
+            <section class="ticket t-align-center mt-10">
                 <h2>IL TUO BIGLIETTO</h2>
                 <div id="biglietto" class="d-none">
                     <h3>DETTAGLIO PASSEGGERO</h3>
-                    <div class="row">
+                    <div class="">
                         <div class="box-passeggero">
                             <h3>NOME PASSEGGERO</h3>
                             <h4 id="nome-passeggero">Nome</h4>
