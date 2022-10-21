@@ -55,6 +55,9 @@ genera.addEventListener('click' , function( ){
 const annulla = document.getElementById("annulla")
 
 annulla.addEventListener("click", function(){
-    window.location.reload()
+    document.getElementById("nome").value = ""
+    document.getElementById("km-passeggero").value = ""
+    document.getElementById("biglietto").className=("d-none")
+
 })
 
