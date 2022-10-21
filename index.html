@@ -17,7 +17,7 @@
             <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
         </header>
         <main class="container">
-            <div class="row j-conter-center flex-wrap bg-white m-top">
+            <div class="row j-conter-center flex-wrap bg-white m-top b-radius">
                 <div class="col">
                     <form>
                         <label for="nome-passeggero" class="t-align-center d-inline-block w-175 mb-20 red-text">Nome Cognome</label><br>
@@ -48,35 +48,38 @@
 
             </div>
             <section class="ticket t-align-center mt-10">
-                <h2>IL TUO BIGLIETTO</h2>
+                <h2 class="white-text">IL TUO BIGLIETTO</h2>
                 <div id="biglietto" class="d-none">
-                    <h3>DETTAGLIO PASSEGGERO</h3>
-                    <div class="">
-                        <div class="box-passeggero">
-                            <h3>NOME PASSEGGERO</h3>
-                            <h4 id="nome-passeggero">Nome</h4>
+                    <h3 class="t-initial">DETTAGLIO PASSEGGERO</h3>
+                    <div class="row">
+                        <div class="col-4 bg-grey">
+                            <div class="box-passeggero">
+                                <h3>NOME PASSEGGERO</h3>
+                                <h4 id="nome-passeggero"></h4>
+                            </div>
                         </div>
-                    </div>
-                    <table>
-                        <thead>
-                            <tr>
-                              <th>Offerta</th>
-                              <th>Carrozza</th>
-                              <th>Codici CP</th>
-                              <th>Costo biglietto</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                              <td id="offerta">Biglietto standard</td>
-                              <td id="carrozza">5</td>
-                              <td id="codice">92911</td>
-                              <td id="costo">2.10</td>
-                            </tr>
-                        </tbody>
+                        <table class="table-border">
+                            <thead>
+                                <tr>
+                                  <th>Offerta</th>
+                                  <th>Carrozza</th>
+                                  <th>Codici CP</th>
+                                  <th>Costo biglietto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <td id="offerta"></td>
+                                  <td id="carrozza"></td>
+                                  <td id="codice"></td>
+                                  <td id="costo"></td>
+                                </tr>
+                            </tbody>
+    
+                         
+                        </table>
 
-                     
-                    </table>
+                    </div>
                       
                 </div>
             </section>

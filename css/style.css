@@ -24,6 +24,7 @@ body{
 .j-conter-center{
     justify-content: center;
 }
+
 .col{
     padding:  30px;
     width: calc(100% / 3);
@@ -39,6 +40,9 @@ body{
 }
 .bg-white{
     background-color: #fff;
+    
+}
+.b-radius{
     border-radius: 10px;
 }
 .m-top{
@@ -63,7 +67,9 @@ body{
 .mb-20{
     margin-bottom: 20px;
 }
-
+.p-20{
+    padding: 20px;
+}
 .btn{
   display: inline-block;
   background-color: #CCCCCC;
@@ -90,13 +96,34 @@ body{
 .red-text{
     color: #b91450;
 }
+.t-initial{
+    text-align: initial;
+}
 th, td{
     text-align: left;
-    padding: 20px;
+    padding: 15px;
 }
 .show-ticket{
     display: block;
+    background-color: #fff;
+    padding: 20px;
 }
 .d-none{
     display: none;
+}
+.bg-grey{
+    background-color: #808080;
+}
+.col-4{
+    width: calc(100% / 12 * 4);
+}
+.col-2{
+    width: calc(100% / 12 * 2);
+}
+.box-passeggero{
+    margin: 10px 60px 0 0 ;
+}
+.table-border{
+    border-top: 1px solid;
+    border-bottom: 1px solid ;
 }
