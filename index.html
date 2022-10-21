@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Biglietto Treno Form</title>
+    </head>
+    <body>
+        <header>
+            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        </header>
+        <main>
+            <div class="">
+                <form>
+                    <label for="nome-passeggero">Nome Cognome</label><br>
+                    <input type="text" id="nome-passeggero" placeholder="inserisci nome e cognome">
+                </form>
+
+            </div>
+            <div>
+                <form>
+                    <label for="km-passeggero">Inserisci i km da percorrere</label><br>
+                    <input type="number" id="km-passeggero" min="1" placeholder="inserisci i km che vuoi percorrere">
+                </form>
+
+            </div>
+            <div>
+                <label for="age">Fascia d'et&agrave;</label>
+                <select id="age" name="agelist" form="ageform">
+                    <option value="minorenne">Minorenne</option>
+                    <option value="maggiorenne ">Maggiorenne</option>
+                    <option value="over65">Over65</option>
+                </select>
+
+            </div>
+            <div>
+                <button id="genera">Genera</button>
+                <button id="annulla">Annulla</button>
+            </div>
+            <section class="ticket">
+                <h2>IL TUO BIGLIETTO</h2>
+                <div id="biglietto" >
+                    <h3>DETTAGLIO PASSEGGERO</h3>
+                    <div class="row">
+                        <div class="box-passeggero">
+                            <h3>NOME PASSEGGERO</h3>
+                            <h4 id="nome-passeggero">Nome</h4>
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                              <th>Offerta</th>
+                              <th>Carrozza</th>
+                              <th>Codici CP</th>
+                              <th>Costo biglietto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td id="offerta">Biglietto standard</td>
+                              <td id="Carrozza">5</td>
+                              <td id="codice">92911</td>
+                              <td id="costo">2.10</td>
+                            </tr>
+                        </tbody>
+
+                     
+                    </table>
+                      
+                </div>
+            </section>
+        </main>
+
+    </body>
+</html>
