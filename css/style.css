@@ -11,3 +11,9 @@ th, td{
     text-align: left;
     padding: 20px;
 }
+.show-ticket{
+    display: block;
+}
+.d-none{
+    display: none;
+}
